@@ -66,6 +66,7 @@ resource "coder_agent" "main" {
     # Start Docker daemon in background
     sudo dockerd >/tmp/dockerd.log 2>&1 &
     sleep 2
+    sudo chmod 666 /var/run/docker.sock 2>/dev/null || true
 
     # Initialize fnm
     export FNM_DIR="/home/coder/.local/share/fnm"
