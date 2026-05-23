@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+# OS
+.DS_Store
+Thumbs.db
+
+# Coder
+.coder/
+
+# IDE
+.vscode/
+.idea/
